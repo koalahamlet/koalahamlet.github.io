@@ -1,0 +1,181 @@
+body {
+	font-family: 'chaparral pro';
+	color: #42525B;
+	font-size: 16px;
+	line-height: 18px;
+	text-align: left;
+	font-weight: normal;
+	background: #8BDCF2 url("background.png") top center repeat;
+}
+
+/* typography */
+
+h1 {
+	font-size: 20px;
+	border-bottom: #84B4BF solid 1px;
+	line-height: 22px;
+	display: inline-block;
+	margin-bottom: 10px;
+}
+
+h2 {
+	font-size: 14px;
+}
+
+h3 {
+	font-size: 14px;
+	font-style: italic;
+	margin-top: 20px;
+}
+
+sidebar a {
+	border: none;
+}
+
+sidebar li a {
+		font-style: italic;
+}
+
+a {
+	position: relative;
+	border: none;
+	border-bottom: #84B4BF dotted 1px;
+	color: #43535d;
+	text-decoration: none;
+	font-weight: normal;
+	padding-bottom: 1px;
+
+	-moz-transition: color;
+	-webkit-transition: color;
+	transition: color;
+
+	-moz-transition-duration: .3s;
+	-khtml-transition-duration: .3s;
+	-webkit-transition-duration: .3s;
+	transition-duration: .3s; 
+}
+
+a:hover {
+	border-bottom: #84B4BF dotted 1px;
+	position: relative;
+	top: -1px;
+	color: #b844a7;
+	}
+
+a:active: {
+	position: relative;
+	bottom: -1px;
+}
+
+a.more {
+	font-size: 12px;
+	font-weight:bold;
+	display: inline-block;
+	margin-top: 6px;
+}
+
+.cf {
+	width: 800px;
+	max-height: 200px;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+    
+    }
+
+.cf:after{
+    clear: both;
+}
+
+em, author {
+	font-style: italic;
+}
+
+section li {
+	line-height: 22px;
+}
+
+p {
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 8px;
+}
+
+ul {
+	margin-bottom: 10px;
+}
+
+footer {
+	display: block;
+	border-top: #84B4BF dotted 1px;
+	padding-top: 4px;
+	margin-top:40px;
+	font-size: 14px;
+}
+
+/* structure */
+
+columns {
+	display: block;
+	margin-left: 240px;
+	width: 820px;
+}
+
+container {
+	display: block;
+	margin: 80px auto;
+	width: 1100px;
+}
+
+sidebar {
+	display: block;
+	float: left;
+	width: 240px;
+}
+
+section#thinking-about {
+	float: left;
+	width: 800px;
+}
+
+section#elsewhere, section#press, section#popular, section#currently{
+	float: left;
+	width: 400px;
+	margin-top: 20px;
+}
+
+section#notification {
+	width: 100%;
+	margin: 0 0 20px 0;
+	background: #fff;
+	opacity: .5;
+	padding: 10px;
+	position: fixed;
+	top:0;
+	text-align: center
+}
+
+#notification p {
+	margin: 0 auto;
+}
+/* sidebar */
+
+
+
+/* nav */
+
+nav {
+	display: block;
+	height:190px;
+	margin: 0 auto;
+	position: relative;
+}
+
+/*sections stuff */
+
+
+/* the contact form */.input, textarea {
+	outline: none;
+}
