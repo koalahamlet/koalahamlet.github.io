@@ -1,4 +1,4 @@
 koalahamlet.github.io
 =====================
 
-My site!
+My totally not finished resume/site!
