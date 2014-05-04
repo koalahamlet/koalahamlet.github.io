@@ -220,7 +220,7 @@ nav {
 		background-color: #444;
 		width: 200px;
 		position: fixed;
-		-webkit-transform: rotateY(90deg);
+		-webkit-transform: translateX(-200px);		
 		top: 0;
 		height: 100%;
 		margin: 0;
@@ -231,7 +231,7 @@ nav {
 	}
 
 	#drawer.out {
-		-webkit-transform: rotateY(0deg);
+		-webkit-transform: translateX(0px);
 	}
 
 	#hamburger.out {
