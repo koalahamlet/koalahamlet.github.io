@@ -183,7 +183,7 @@ nav {
 .mobile {
 	display: none;
 }
-
+/*
 @media(min-width: 300px) and (max-width: 800px) {
 	.mobile {
 		display: inherit;
@@ -251,4 +251,4 @@ nav {
 	#drawer li:last-child {
 		border-bottom: none;
 	}
-}
+}*/
