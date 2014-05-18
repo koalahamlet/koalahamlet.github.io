@@ -1,0 +1,544 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+
+
+*/
+
+
+
+textarea {
+  border-width: 2px;
+}
+
+input { border-width: 2px; }
+
+select {border-width: 1px;}
+
+abbr {border-bottom: dotted 1px;}
+
+input[name="article[title]"] {font-size: 1.4em; height: 1.4em;}
+
+input {padding: 0 .4em;}
+
+
+/* Center the main content, with a bit of padding left and right */
+article,
+form.new_article,
+form.edit_article,
+div.index {
+  margin: auto;
+  padding: 0 1em;
+}
+
+.new_article,
+.edit_article {
+  max-width: 35em;
+}
+
+/* Spacing after block-level elements */
+article p,
+article ul,
+article ol,
+article h2,
+article h3,
+article pre,
+article dl,
+article figure,
+article table { margin-bottom: 1em }
+
+/* Line height */
+article, form {
+  line-height: 1.3em;
+}
+
+.main a {
+  display: inline;
+  margin: 0 1em 1em 1em;
+  font-size: .8em;
+}
+
+.main p {
+  font-size: .8em;
+}
+
+h4 {
+  font-size: 1em;
+  font-style: italic;
+  margin-top: 20px;
+}
+
+article hr {
+  margin: 1em;
+  border-width: .22em 0 0 0;
+}
+
+article blockquote {
+  margin-left: 1em;
+  border-left: .2em;
+  padding-left: 1em;
+  font-size: 1.1em;
+}
+
+article table {
+  margin-left: 1em;
+  border-collapse: collapse;
+}
+
+article table thead {
+  border-bottom: .2em solid;
+}
+
+/* Internal border between column groups */
+article colgroup {border-left: .2em solid;}
+article colgroup:first-of-type {border-left: 0;}
+
+article table td, article table th {
+  padding: .5em;
+}
+
+table caption {margin-bottom: .5em;}
+
+article ol, article ul, article dl, article figure {
+  margin-left: 1.2em;
+  padding-left: 1em;
+}
+
+article.image figure {
+  margin-left: 0; padding-left: 0;
+}
+
+article li {
+  margin-left: 0;
+  padding: 0;
+  font-size: 1em;
+  margin-bottom: .5em;
+}
+
+article ol li {
+  list-style-type: lower-alpha;
+}
+
+article ul li {
+  list-style-type: circle;
+}
+
+article dd {margin-left: 1em;}
+
+/* Display */
+
+article {
+  margin-bottom: 2em;
+}
+
+article header hgroup h1,
+article header hgroup h2 {display: inline;}
+
+article header hgroup h2 { margin-left: .2em;};
+
+input {height: 1.5em;}
+
+input,
+textarea {font-size: 1em;}
+
+input[type=text] {width: 20em;}
+input.index_letter {width: 2em;}
+input.page_title {width: 25em;}
+textarea.description {width: 25em; height: 4em; display: block; padding: 0 .2em;}
+
+form div {margin-bottom: 1em;}
+
+form div label {width: 5em;}
+
+article.loading {opacity: 0.5;}
+
+form textarea {width: 100%;}
+
+article img {max-width: 68%;}
+
+article figure img {margin-left: auto; margin-right: auto; display: block; max-height: 30em;}
+article.image figure img {max-height: 100em;}
+article figure figcaption {margin-top: 0.2em;}
+
+article p img {max-height: 1em; display: inline;}
+
+
+@media (min-width: 100px) {
+  .unimportant,
+  .context,
+  .additional-info { display: none;}
+}
+
+@media (min-width: 500px) {
+  span.context { display: inline;}
+  p.context { display: block;}
+}
+
+@media (min-width: 600px) {
+  span.additional-info { display: inline;}
+  p.additional-info { display: block;}
+}
+
+@media (min-width: 800px) {
+  span.unimportant { display: inline;}
+  p.unimportant { display: block;}
+}
+/* Solid borders by default */
+
+* {
+  border-style: solid;
+}
+
+article hr { border-style: solid; }
+
+article blockquote { border-left-style: solid; }
+
+article { border-bottom-style: solid; }
+/* Base colour is black on white for maximum legibility */
+
+body { background: #8BDCF2 url("background.png") top center repeat;}
+
+* {border-color: #001F33;}
+
+a {
+  position: relative;
+  border: none;
+  border-bottom: #84B4BF dotted 1px;
+  color: #43535d;
+  text-decoration: none;
+  font-weight: normal;
+  padding-bottom: 1px;
+
+  -moz-transition: color;
+  -webkit-transition: color;
+  transition: color;
+
+  -moz-transition-duration: .3s;
+  -khtml-transition-duration: .3s;
+  -webkit-transition-duration: .3s;
+  transition-duration: .3s;
+}
+
+a:hover {
+  border-bottom: #84B4BF dotted 1px;
+  position: relative;
+  top: -1px;
+  color: #b844a7;
+  }
+
+a:active: {
+  position: relative;
+  bottom: -1px;
+}
+
+/* Invalid fields have red text to warn people */
+input:invalid,
+textarea:invalid { color: red; }
+
+
+/* Nav links shouldn't use link colours */
+nav a,
+nav a:visited,
+div.index nav a { color: #020; }
+
+/* Article headers shouldn't use link colours */
+article header a,
+article header a:visited { color: #020; }
+
+/* Article headers should use link colour on hover */
+article header a:hover { color: #004CFF; }
+
+
+/* Search button should be same colour as text */
+form.search button { color: black; background-color: transparent; }
+
+/* Block quotes should have a colourful border to help them stand out */
+article blockquote { border-color: #0080FF; }
+
+/* Horizontal rules should be colourful */
+article hr { border-color: #7B00FF; }
+
+/* Text of blockquotes in a different colour */
+article blockquote { color: #36454F; }
+
+/* Use grey for less-significant content such as meta-data */
+ul.index li time {color: #999;}
+
+.tagline {
+  color: #999;
+}
+
+
+
+article { border-bottom-color: #001F33; }
+/* Buttons should have a different cursor style to indicate that they are clickable */
+
+button {cursor: pointer;}
+
+@media screen and (min-width: 600px) {
+  ul.index, ol.index {
+    -moz-column-count: 2; -webkit-column-count: 2; column-count: 2;
+  }
+}
+
+div.index {max-width: 50em; padding-top: 2em; }
+
+div.index h2 {margin-bottom: .5em; margin-top: 1em;}
+
+ul.index {list-style-type: none; margin: 0; padding: 0;}
+
+ul.index li {line-height: 1.2em;}
+
+ul.index li {margin-bottom: .4em;}
+
+ul.index li time {margin-left: 1em; font-size: .9em;}
+
+div.index nav { letter-spacing: .1em;}
+
+
+/* Reset for simpler styling */
+
+* {
+  margin: 0;
+  border-width: 0;
+}
+
+/* No margin or padding on these elements */
+.main {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 68%;
+}
+
+body {
+  padding: 0;
+}
+
+article {
+  padding: 1em;
+}
+
+@media (min-width: 600px) {
+  article {
+    padding: 2em;
+  }
+}
+
+@media (min-width: 800px) {
+  article {
+    padding: 2em 4em;
+  }
+}
+
+@media (min-width: 800px) {
+  /* Main nav fixed on left */
+  .main {
+    position: fixed;
+    width: 12em;
+  }
+  .content {
+    margin: 0 0 0 12em;
+  }
+}
+
+.main .site-name {
+  margin: 0 1em 1em 1em;
+}
+
+.main .tagline {
+  margin: 0 1em 1em 1em;
+}
+
+.content {
+  min-height: 800px;
+}
+
+.home img {
+  width: 6em;
+  height: 6em;
+  display: block;
+  margin: 0 auto 0 auto;
+}
+
+.features a {
+  display: inline;
+}
+
+
+
+
+
+article {
+  border-bottom-width: .22em;
+  font-size: 16px
+}
+
+article header {
+  margin-bottom: 1em;
+}
+
+article p {
+  max-width: 40em;
+}
+
+#q {
+	max-width: 90%;
+}
+
+#thinking-about {
+
+}
+
+#projects {
+
+}
+
+#current-media {
+
+}
+
+#resume {
+
+}
+
+#elsewhere {
+
+}
+
+
+@media (min-width: 1200px) {
+
+  #resume {
+    margin-bottom: 80px;
+  }
+
+  .cf {
+    display: block;
+    margin-top: 40px;
+    width: 820px;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+
+  footer {
+    /* text-align: center; */
+    margin-left: 9em;
+  }
+
+}
+@media (min-width: 800px) {
+  .features a {
+    display: block;
+  }
+  .content {
+    border-left-width: .22em;
+  }
+}
+
+@media (max-width: 1200px) and (min-width: 800px) {
+  section {
+    margin-top: 2em;
+  }
+}
+
+@media (max-width: 800px) {
+  section {
+    margin-top: 2em;
+  }
+}
+
+/* table cells work well centre-aligned, so that table cells
+   are more easily associated with header cells */
+
+table th, table td {text-align: center;}
+
+.features {text-align: center;}
+/* Captions for figures (eg images) look good centre-aligned, to
+   more closely associate them with the figure. */
+article figure figcaption {text-align: center;}
+
+/* The legend for a fieldset in a form */
+fieldset legend {text-align: center;}
+
+/* The navigation links for the index page (eg A-Z) */
+div.index nav {text-align: center;}
+
+.main {
+  text-align: center;
+}
+
+
+/* Font sizes */
+
+
+body {
+  font-size: 18px;
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 20px;
+  }
+}
+
+article header h1 {
+  font-size: 1.4em;
+  line-height: 1.3em;
+}
+
+article header hgroup h2 {
+  font-size: 1.2em;
+  font-weight: normal;
+}
+
+article h1 {
+border-bottom: #84B4BF solid 1px;
+line-height: 22px;
+display: inline-block;
+margin-bottom: 10px;
+  font-size: 1.4em;
+  margin-bottom: .2em;
+}
+
+article footer { font-size: .8em; }
+
+button {font-size: 1em;}
+/* Basic links should have no additional styles */
+
+a { text-decoration: none; }
+body, input, button {
+  font-family: Georgia, Cambria, 'Times New Roman', Times, serif;
+}
+
+textarea {
+  font-family: Courier, monospace;
+  border-width: 2px;
+}
+
+a.index {
+  text-transform: lowercase;
+  font-variant: small-caps;
+  letter-spacing: .1em;
+}
+
+article blockquote {
+  font-style: italic;
+}
+
+article table caption {font-style: italic;}
+
+article dt {font-style: italic;}
+
+article figure figcaption {font-style: italic; margin-top: 0.2em;}
+
+.big {
+  font-size: 1.1em !important; 
+}
+article tfoot {
+  font-weight: bold; 
+}
