@@ -497,12 +497,10 @@ article header hgroup h2 {
 }
 
 article h1 {
-border-bottom: #84B4BF solid 1px;
-line-height: 22px;
-display: inline-block;
-margin-bottom: 10px;
+  line-height: 22px;
+  display: inline-block;
   font-size: 1.4em;
-  margin-bottom: .2em;
+  margin-bottom: .55em;
 }
 
 article footer { font-size: .8em; }
