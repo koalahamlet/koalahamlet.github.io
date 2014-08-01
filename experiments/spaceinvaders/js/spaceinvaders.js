@@ -37,9 +37,9 @@ function Game() {
         gameWidth: 600,
         gameHeight: 300,
         fps: 50,
-        debugMode: false,
-        invaderRanks: 5,
-        invaderFiles: 10,
+        debugMode: true,
+        invaderRanks: 4,
+        invaderFiles: 7,
         shipSpeed: 120,
         levelDifficultyMultiplier: 0.5,
         pointsPerInvader: 10
@@ -223,12 +223,12 @@ WelcomeState.prototype.update = function (game, dt) {
 
 
 };
-
+// draw the start screen
 WelcomeState.prototype.draw = function(game, dt, ctx) {
 
     //  Clear the background.
     ctx.clearRect(0, 0, game.width, game.height);
-
+    // set properties
     ctx.font="30px Arial";
     ctx.fillStyle = '#ffffff';
     ctx.textBaseline="center"; 
@@ -326,8 +326,8 @@ PlayState.prototype.enter = function(game) {
     for(var rank = 0; rank < ranks; rank++){
         for(var file = 0; file < files; file++) {
             invaders.push(new Invader(
-                (game.width / 2) + ((files/2 - file) * 200 / files),
-                (game.gameBounds.top + rank * 20),
+                (game.width / 2) + ((files/2 - file) * 300 / files),
+                (game.gameBounds.top + rank * 50),
                 rank, file, 'Invader'));
         }
     }
@@ -560,7 +560,7 @@ PlayState.prototype.draw = function(game, dt, ctx) {
     // ctx.fillStyle = '#ff5555';
     for(var i=0; i<this.bombs.length; i++) {
         var bomb = this.bombs[i];
-        ctx.drawImage(bombImageObj, bomb.x - 2, bomb.y - 2, 10, 14);
+        ctx.drawImage(bombImageObj, bomb.x - 2, bomb.y - 2, 30, 35);
     }
 
     //  Draw rockets.
@@ -571,7 +571,7 @@ PlayState.prototype.draw = function(game, dt, ctx) {
     // ctx.fillStyle = '#ff0000';
     for(var i=0; i<this.rockets.length; i++) {
         var rocket = this.rockets[i];
-        ctx.drawImage(rocketsImageObj,rocket.x, rocket.y - 2, 10, 14);
+        ctx.drawImage(rocketsImageObj,rocket.x, rocket.y - 2, 30, 35);
     }
 
     //  Draw info.
@@ -618,7 +618,7 @@ PlayState.prototype.fireRocket = function() {
     if(this.lastRocketTime === null || ((new Date()).valueOf() - this.lastRocketTime) > (1000 / this.config.rocketMaxFireRate))
     {   
         //  Add a rocket.
-        this.rockets.push(new Rocket(this.ship.x, this.ship.y - 12, this.config.rocketVelocity));
+        this.rockets.push(new Rocket(this.ship.x, this.ship.y - 65, this.config.rocketVelocity));
         this.lastRocketTime = (new Date()).valueOf();
 
         //  Play the 'shoot' sound.
@@ -751,8 +751,8 @@ function Invader(x, y, rank, file, type) {
     this.rank = rank;
     this.file = file;
     this.type = type;
-    this.width = 16;
-    this.height = 20;
+    this.width = 45;
+    this.height = 50;
 }
 
 /*
