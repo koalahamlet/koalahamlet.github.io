@@ -304,6 +304,14 @@ div.index nav { letter-spacing: .1em;}
   border-width: 0;
 }
 
+.melvin {
+  border-bottom: 0;
+}
+
+.melvin:hover {
+  border-bottom: 0;
+}
+
 /* No margin or padding on these elements */
 .main {
   margin: 0;
