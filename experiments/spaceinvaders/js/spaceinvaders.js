@@ -214,9 +214,9 @@ WelcomeState.prototype.enter = function(game) {
     // Create and load the sounds.
     game.sounds = new Sounds();
     game.sounds.init();
-    game.sounds.loadSound('shoot', 'sounds/shoot.wav');
-    game.sounds.loadSound('bang', 'sounds/bang.wav');
-    game.sounds.loadSound('explosion', 'sounds/explosion.wav');
+    // game.sounds.loadSound('shoot', 'sounds/shoot.wav');
+    // game.sounds.loadSound('bang', 'sounds/bang.wav');
+    // game.sounds.loadSound('explosion', 'sounds/explosion.wav');
     game.sounds.loadSound('song', 'sounds/moby_song.wav');
 };
 
@@ -304,13 +304,6 @@ function PlayState(config, level) {
 }
 
 PlayState.prototype.enter = function(game) {
-
-game.sounds == null;
-game.sounds = new Sounds();
-game.sounds.init();
-game.sounds.loadSound('song', 'sounds/moby_song.wav');
-
-
 
     //  Create the ship.
     this.ship = new Ship(game.width / 2, game.gameBounds.bottom);
@@ -464,7 +457,7 @@ PlayState.prototype.update = function(game, dt) {
         }
         if(bang) {
             this.invaders.splice(i--, 1);
-            // game.sounds.playSound('bang');
+            game.sounds.playSound('bang');
         }
     }
 
@@ -499,7 +492,7 @@ PlayState.prototype.update = function(game, dt) {
                 bomb.y >= (this.ship.y - this.ship.height/2) && bomb.y <= (this.ship.y + this.ship.height/2)) {
             this.bombs.splice(i--, 1);
             game.lives--;
-            // game.sounds.playSound('explosion');
+            game.sounds.playSound('explosion');
         }
                 
     }
@@ -513,7 +506,7 @@ PlayState.prototype.update = function(game, dt) {
             (invader.y - invader.height/2) < (this.ship.y + this.ship.height/2)) {
             //  Dead by collision!
             game.lives = 0;
-            // game.sounds.playSound('explosion');
+            game.sounds.playSound('explosion');
         }
     }
 
@@ -632,8 +625,7 @@ PlayState.prototype.fireRocket = function() {
         this.lastRocketTime = (new Date()).valueOf();
 
         //  Play the 'shoot' sound.
-        // game.sounds.playSound('shoot');
-
+        game.sounds.playSound('shoot');
     }
 };
 
