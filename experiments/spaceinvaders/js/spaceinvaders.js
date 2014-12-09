@@ -310,7 +310,7 @@ game.sounds = new Sounds();
 game.sounds.init();
 game.sounds.loadSound('song', 'sounds/moby_song.wav');
 
-game.sounds.playSound('song');
+
 
     //  Create the ship.
     this.ship = new Ship(game.width / 2, game.gameBounds.bottom);
@@ -344,6 +344,7 @@ game.sounds.playSound('song');
     this.invaderCurrentVelocity = this.invaderInitialVelocity;
     this.invaderVelocity = {x: -this.invaderInitialVelocity, y:0};
     this.invaderNextVelocity = null;
+    game.sounds.playSound('song');
 };
 
 PlayState.prototype.update = function(game, dt) {
