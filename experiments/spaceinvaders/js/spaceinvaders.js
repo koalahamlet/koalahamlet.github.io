@@ -286,6 +286,7 @@ GameOverState.prototype.keyDown = function(game, keyCode) {
 
 //  Create a PlayState with the game config and the level you are on.
 function PlayState(config, level) {
+
     this.config = config;
     this.level = level;
 
@@ -303,6 +304,11 @@ function PlayState(config, level) {
 }
 
 PlayState.prototype.enter = function(game) {
+
+game.sounds == null;
+game.sounds = new Sounds();
+game.sounds.init();
+game.sounds.loadSound('song', 'sounds/moby_song.wav');
 
 game.sounds.playSound('song');
 
