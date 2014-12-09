@@ -214,9 +214,9 @@ WelcomeState.prototype.enter = function(game) {
     // Create and load the sounds.
     game.sounds = new Sounds();
     game.sounds.init();
-    // game.sounds.loadSound('shoot', 'sounds/shoot.wav');
-    // game.sounds.loadSound('bang', 'sounds/bang.wav');
-    // game.sounds.loadSound('explosion', 'sounds/explosion.wav');
+    game.sounds.loadSound('shoot', 'sounds/shoot.wav');
+    game.sounds.loadSound('bang', 'sounds/bang.wav');
+    game.sounds.loadSound('explosion', 'sounds/explosion.wav');
     game.sounds.loadSound('song', 'sounds/moby_song.wav');
 };
 
@@ -337,7 +337,6 @@ PlayState.prototype.enter = function(game) {
     this.invaderCurrentVelocity = this.invaderInitialVelocity;
     this.invaderVelocity = {x: -this.invaderInitialVelocity, y:0};
     this.invaderNextVelocity = null;
-    game.sounds.playSound('song');
 };
 
 PlayState.prototype.update = function(game, dt) {
