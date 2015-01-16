@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://thelatitude.com/login -->
+<html lang="en" class=" js no-touch"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>The Latitude</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="csrf-token" content="&lt;input type=&#39;hidden&#39; name=&#39;csrfmiddlewaretoken&#39; value=&#39;OvKT8f0LBKt26MpQkhFFTxjHtVE4uDOD&#39; /&gt;">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <link rel="shortcut icon" href="https://thelatitude.com/static/favicon.png">
+    <!--[if IE]>
+    <link rel="shortcut icon" href="/static/favicon.ico" />
+    <![endif]-->
+
+    <link href="https://thelatitude.com/static/css/styles.min.css?ver=bf91662399d54e48a1c563285efdfd2f" rel="stylesheet">  
+
+    <link href="./cipher_files/css_bigger" rel="stylesheet" type="text/css">
+
+    <link href="https://vjs.zencdn.net/4.6/video-js.css" rel="stylesheet">
+    </script><script src="./cipher_files/video.js"></script>
+    
+    
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    
+    <script type="text/javascript" src="./cipher_files/jquery-1.8.2.js"></script>
+    <script type="text/javascript" src="./cipher_files/modernizr.custom.40523.js"></script>
+    
+  </head>
+
+  <body class="dark hasGoogleVoiceExt">
+    
+    
+<div class="container-center step5" style="display: block;">
+
+    <svg x="0px" y="0px" width="150px" height="170px" viewBox="0 0 4577.559 5285.584">
+    <polygon fill="none" stroke="#231F20" stroke-width="80" stroke-miterlimit="10" points="2769.762,3753.465 3730.928,3198.057
+        846.738,1533.029 1807.698,977.196 2769.328,1532.464 125.028,3059.256 125.104,1393.443 2288.511,144.339 4452.229,1393.624
+        4452.26,1671.462 1808.056,3198.194  "></polygon>
+    <polygon fill="none" stroke="#231F20" stroke-width="80" stroke-miterlimit="10" points="1808.1,3753.409 4452.401,2226.616
+        4452.551,3891.776 2288.512,5141.245 124.992,3892.077 124.965,3614.526 2769.373,2087.679 1807.667,1532.408 846.293,2087.632
+        3731.322,3753.286 2769.731,4308.676     "></polygon>
+  </svg>
+
+
+  <input id="text_box" name="cipher_text" placeholder="Paste text here" type="text">
+    <input id="decrypt" type="submit" class="button" value="decrypt">
+    <input id="encrypt" type="submit" class="button" value="encrypt">
+  <div id="output_text" name="blah" placeholder="Password" type="password"></div>
+</div>
+
+  <script type="text/javascript">
+    var $container = $("body .container-center");
+    var $output = $("#output_text");
+    var $textbox = $("#text_box");
+    $container.hide();
+
+
+    $(document).ready(function(){
+
+      //Focus in on first input
+      if ($("input[type^=hidden]").length > 0) {
+        $("input[type^=hidden]:first").focus()
+      } else {
+        $("input:first").focus();
+      }
+
+      $container.fadeIn(1000);
+
+      $(window).unload(function(){
+        $container.fadeOut(1000);
+      })
+    });
+    //converts symbols to ascii
+var symbolCipher = {
+  conversion_table: {"A":"å","B":"∫","C":"ç","D":"∂","E":"´","F":"ƒ","G":"©","H":"˙","I":"ˆ","J":"∆","K":"˚","L":"¬","M":"µ","N":"˜","O":"ø","P":"π","Q":"œ","R":"®","S":"ß","T":"†","U":"¨","V":"√","W":"∑","X":"≈","Y":"¥","Z":"Ω","1":"¡","2":"™","3":"£","4":"¢","5":"∞","6":"§","7":"¶","8":"•","9":"ª","0":"º","`":"`","-":"–","=":"≠","[":"“","]":"‘","\\":"«","/":"÷",";":"…","'":"æ",",":"≤",".":"≥"," ":" "},
+
+  encipher: function (pt) {
+    var ct = "";
+    for ( i = 0; i < pt.length; i++) {
+      var match = pt.charAt(i).toUpperCase();
+      if(typeof this.conversion_table[match] !== 'undefined') {
+        ct += this.conversion_table[match];
+      } else {
+        ct += pt.charAt(i);
+      }
+    }
+    $output.empty();
+    $output.append(ct);
+  },
+
+  decipher: function(ct) {
+    var what = ct;
+    var pt = "";
+    for ( i = 0; i < what.length; i++ ) {
+      for (key in this.conversion_table) {
+        if (this.conversion_table[key] === what.charAt(i)) {
+          pt += key;
+        }
+      }
+    }
+    $output.empty();
+    $output.append(pt);
+  }
+};
+
+$("#decrypt").click(function(){
+    var str = $textbox.val();
+    symbolCipher.decipher(str);
+  });
+
+  $("#encrypt").click(function(){
+    var str = $textbox.val();
+    symbolCipher.encipher(str);
+  });
+
+  </script>
+  
+
+</body></html>
