@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/koalahamlet
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://mikecanco.de
+  * I am koalahamlet (https://keybase.io/koalahamlet) on keybase.
+  * I have a public key with fingerprint D798 2A49 C13D F1B5 7923  4F87 AD8B CEFC AEBF 0CFF
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101a0a8cac5a77ad6b34d17a1cd143b7633c09197336d53e7b6eec46919b87494560a",
+      "fingerprint": "d7982a49c13df1b579234f87ad8bcefcaebf0cff",
+      "host": "keybase.io",
+      "key_id": "ad8bcefcaebf0cff",
+      "kid": "0101a0a8cac5a77ad6b34d17a1cd143b7633c09197336d53e7b6eec46919b87494560a",
+      "uid": "726e4be44f240a81f9ad47d4c46ee119",
+      "username": "koalahamlet"
+    },
+    "service": {
+      "hostname": "mikecanco.de",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1501020139,
+  "expire_in": 157680000,
+  "prev": "71ae4d9d6e275ca2043eb8d7833e15ed3e815ba7b78f87ef2a562753db0b236a",
+  "seqno": 3,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.73
+Comment: https://keybase.io/crypto
+
+yMImAnicrVJbiE1RGD4zhsxBmRCmxmSPSB3HXnvtvdfex4NSmAcxuTRuOa21179n
+tnNm7+PsPcdcRTEYYSghkmvNxTwMDy7JMIjIA2UShUmK3MslU2TtiTeP1stq/f/3
+ff/3/+u/OWZYJJrXM/Hs+Jl7T87Nu3f9cG1k1cbet40S83i9lGiUUjB0QZqDHyRT
+DpcSkoxkRGVqWNTSKCGU6wyrHBGKLI5UzIiOsSWbyCQY61zDQJgOYKm6CDGDqKaq
+6TKVYpLtuFWQzWQdNxCynJiGQlXTQpjbiGnEVLBqG0LfYBbYFgVmy5ZtC2K154cM
+YY5RH+KOJ2LikRyy9w/8f/ZdOyRHFB1UBqpqK6pQRbZJuUq4KggACJkh0IesS2sg
+9OrRNK2mNWkIpOaYJBI5x4JwtmEzf0A1Tgos6lpenIOgZ7Je4FleWmSqgyCTCIlB
+fSZEbgSW/KORZI7LxSQFIQdZ3/FcKYEE0gqcUBRpom9FRtiMSVCXcbKQdEKERnRD
+FicsA7mwH0RB5SbXQSGaRRVZxcAMTgyMAWnAMRhIY5QwYohfAVuhmi6QmDOZKVgP
+B+PDBteTEljYpFVC0neqXBrUZkFq7ru2tiCSF42MGJ4fblgkWjj2797t6xwZ2Xr0
+xoVRaejfVdOQ+5w8cn9xn/L82xLaW3lwZ3mnsqxu3ZQb/puj3S8mlR+HfT1bk2X5
+E9rXV8QnL572csHusnezjw00fypsLyjYqf9AHYMLB54uuvh5XZ5U+CS2ZebDGZVR
+p7SiVd5Wsv7Xh9alp/ruqq9OxK/rtSXxnqJnxgAve93JtJtr3pzZZDb0Fha/+jq9
+5UDJ2C+Vd05PaZVLu0vfl7Y8amo7trDl24Vchz+s7VZX6ueR1dG61uJlRdeuunvO
+zWnp7Nm+OUVWPi5oa9w2YtbVjk9dTbHvFYNXVq9QuhvOD0zdUX67KzauaN6GQ/N3
+9Pts+e3nZw9fSmUuP9g/uj+/6ONvxcZAZg==
+=vrqN
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/koalahamlet
+
+==================================================================
