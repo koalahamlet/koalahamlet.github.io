@@ -1,0 +1,45 @@
+/* === Koalahamlet site fixes (shared) === */
+.header-menu { display: none !important; }
+main .sections:first-child .page-section:first-child { padding-top: 20px !important; }
+#header { position: relative !important; z-index: 100; pointer-events: auto !important; }
+#header * { pointer-events: auto !important; }
+.header-display-mobile { display: none !important; }
+@media (max-width: 799px) {
+  .header-display-mobile { display: block !important; }
+  .header-display-desktop { display: none !important; }
+}
+.header-announcement-bar-wrapper { display: none !important; }
+/* siteWrapper only contains the header in the static clone */
+#siteWrapper { min-height: 0 !important; }
+/* Stray nav directly in #header (Squarespace clone artifact) */
+#header > .header-nav { display: none !important; }
+/* Stray social icons rendered as direct child of <body> */
+body > .header-actions--right { display: none !important; }
+/* Squarespace animation system never fires without its JS — force all animated elements visible */
+[data-animation-role] { opacity: 1 !important; transition: none !important; pointer-events: auto !important; }
+.gallery-masonry-item-wrapper { opacity: 1 !important; }
+/* Masonry layout: replace Squarespace's JS-driven absolute positioning with CSS columns */
+.gallery-masonry-wrapper {
+  columns: 2;
+  column-gap: 8px;
+}
+.gallery-masonry-item {
+  break-inside: avoid;
+  margin-bottom: 8px;
+  display: block;
+  width: 100%;
+}
+.gallery-masonry-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+@media (max-width: 600px) {
+  .gallery-masonry-wrapper { columns: 1; }
+}
+/* Desktop header layout and spacing */
+.header-display-desktop { padding: 0.75rem 2rem; }
+.header-display-desktop .header-title-nav-wrapper { display: flex; align-items: center; gap: 2.5em; }
+.header-display-desktop .header-title-text a { font-size: 1.1rem; white-space: nowrap; }
+.header-display-desktop .header-nav-list { gap: 2em !important; }
+.header-display-desktop .header-nav-item a { padding: 0.25em 0; }

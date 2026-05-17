@@ -1,0 +1,226 @@
+<!doctype html>
+<!--
+  ╔══════════════════════════════════════════════════════════╗
+  ║           ARTING PROJECT PAGE — TEMPLATE                 ║
+  ╠══════════════════════════════════════════════════════════╣
+  ║  HOW TO USE THIS FILE                                    ║
+  ║                                                          ║
+  ║  1. COPY this file and rename it to your project slug.   ║
+  ║     Example:  my-cool-project.html                       ║
+  ║                                                          ║
+  ║  2. Fill in the four [REPLACE] spots below:              ║
+  ║     A) Page <title> in <head>                            ║
+  ║     B) Hero image  →  <img src="...">  in .project-hero  ║
+  ║     C) Project title text  →  .project-hero-title        ║
+  ║     D) Description paragraph  →  .project-description    ║
+  ║                                                          ║
+  ║  3. Gallery images: each photo is one .gallery-masonry-  ║
+  ║     item block. Duplicate or delete blocks freely.       ║
+  ║     Drop images into assets/images/ and update src.      ║
+  ║                                                          ║
+  ║  4. Add a card in arting/index.html:                     ║
+  ║     Copy any <a class="arting-grid-item"> block,         ║
+  ║     update href, img src, and the title text.            ║
+  ╚══════════════════════════════════════════════════════════╝
+-->
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- [REPLACE A] Page title — shown in browser tab -->
+  <title>Project Title &mdash; Michael &quot;Myko&quot; Huff</title>
+
+  <link rel="icon" type="image/x-icon" href="../assets/sqsp/universal/default-favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../assets/static/static/versioned-site-css/64440e704d53e82542518574/18/5c5a519771c10ba3470d8101/64440e704d53e8254251857c/1735/site.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/static/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1770322189254-3WKSOLNQAMKIJ2S2IB5F/static.css">
+  <link rel="stylesheet" type="text/css" href="../assets/static/site-fixes.css">
+
+  <style>
+    /* ── Hero banner ──────────────────────────────────────── */
+    .project-hero {
+      position: relative;
+      width: 100%;
+      height: 60vh;
+      min-height: 320px;
+      overflow: hidden;
+      background: #1a1a1a; /* fallback color while image loads */
+    }
+    .project-hero img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      display: block;
+    }
+    .project-hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.35);
+      display: flex;
+      align-items: flex-end;
+      padding: 2.5rem 4vw;
+    }
+    .project-hero-title {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      font-weight: normal;
+      margin: 0;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Description text ─────────────────────────────────── */
+    .project-description {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 0 4vw;
+      text-align: center;
+      line-height: 1.8;
+      color: #333;
+    }
+
+    /* ── Gallery section label ────────────────────────────── */
+    /* The masonry grid itself is styled by site-fixes.css.   */
+    /* Just add .gallery-masonry-item blocks and it works.    */
+    .project-gallery {
+      padding: 0 3vw 4rem;
+    }
+  </style>
+
+  <script type="text/javascript" src="https://use.typekit.net/ik/0hF7wmKXjig1YwleYDu7bAU-m9OzvIuQg4B8x6YXjnbfenMIfFHN4UJLFRbh52jhWDjXF2b3ZQS3Febuwh9twR9XwR9U529aFg7PMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0deBhZAoqZWJlZc8cZPuDFeFqO1FUiABkZWF3jAF8OcFzdP37O1FUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80Zko0ZWbCjWw0dA9C-hNydeBGjAuCZWb0jhNlOeUyicm0ZemkOAZTZc9lSDsRZfoDSWmyScmDSeBRZPoRdhXCdeNRjAUGdaFXOYFUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0jhNlOYiaikoyjamTiY8Djhy8ZYmC-Ao1Oco8ifUaiaS0jWw0dA9CiaiaOclzjAUy-eBldemXOcFzdPUaiaS0deBhZAoqZWJlZc8cZPuDFeFqO1FUiABkZWF3jAF8OcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJFjAlX-WjlZa4ziemD-kJsj14ydcszdKu1ScNXZWFUiA97fbRbdsMMeMb6MKG4fFZlIMMjgPMfH6qJXcXbMg6YJMJ7fbRsdsMMeMt6MKG4fFFlIMMjIPMfH6qJ0BMbMs6YJMJ7fbKo9gMgegI6MTMg7L0hG6j.js" async fetchpriority="high" onload="try{Typekit.load();}catch(e){} document.documentElement.classList.remove('wf-loading');"></script>
+  <script>document.documentElement.classList.add('wf-loading')</script>
+  <style>@keyframes fonts-loading { 0%, 99% { color: transparent; } } html.wf-loading * { animation: fonts-loading 3s; }</style>
+</head>
+
+<body class="tweak-portfolio-grid-overlay-height-small tweak-portfolio-grid-overlay-image-aspect-ratio-43-four-three">
+
+  <!-- ── Header / Nav (do not edit) ───────────────────────── -->
+  <div id="siteWrapper" class="clearfix site-wrapper">
+    <header id="header" class="header theme-col--primary">
+      <div class="header-display-desktop" data-content-field="site-title">
+        <div class="header-title-nav-wrapper">
+          <div class="header-title" data-animation-role="header-element">
+            <div class="header-title-text">
+              <a id="site-title" href="../index.html" data-animation-role="header-element">Michael &quot;Myko&quot; Huff</a>
+            </div>
+          </div>
+          <div class="header-nav">
+            <div class="header-nav-wrapper">
+              <nav class="header-nav-list">
+                <div class="header-nav-item header-nav-item--collection">
+                  <a href="../writing/index.html" data-animation-role="header-element">Writing</a>
+                </div>
+                <div class="header-nav-item header-nav-item--collection">
+                  <a href="../engineering/index.html" data-animation-role="header-element">Engineering</a>
+                </div>
+                <div class="header-nav-item header-nav-item--collection header-nav-item--active">
+                  <a href="../arting/index.html" data-animation-role="header-element">Arting</a>
+                </div>
+                <div class="header-nav-item header-nav-item--collection">
+                  <a href="../contact.html" data-animation-role="header-element">Contact</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="header-actions header-actions--right">
+          <div class="header-actions-action header-actions-action--social">
+            <a class="icon icon--fill header-icon header-icon-border-shape-none header-icon-border-style-solid" href="https://www.instagram.com/koalahamlet/" target="_blank" aria-label="Instagram">
+              <svg viewBox="23 23 64 64"><use xlink:href="#instagram-unauth-icon" width="110" height="110"></use></svg>
+            </a>
+            <a class="icon icon--fill header-icon header-icon-border-shape-none header-icon-border-style-solid" href="http://Github.com/koalahamlet" target="_blank" aria-label="GitHub">
+              <svg viewBox="23 23 64 64"><use xlink:href="#github-unauth-icon" width="110" height="110"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+  <!-- ── End Header ───────────────────────────────────────── -->
+
+  <main>
+
+    <!-- ════════════════════════════════════════════════════
+         [REPLACE B] HERO IMAGE
+         Change the src to your cover photo.
+         Put the image in: assets/images/
+         The image fills the banner and crops to fit automatically.
+         ════════════════════════════════════════════════════ -->
+    <div class="project-hero">
+      <img
+        src="../assets/images/REPLACE-WITH-COVER-IMAGE.jpg"
+        alt="Project cover photo"
+      >
+      <!-- ════════════════════════════════════════════════
+           [REPLACE C] PROJECT TITLE
+           This text sits over the hero image.
+           ════════════════════════════════════════════════ -->
+      <div class="project-hero-overlay">
+        <h1 class="project-hero-title">Project Title</h1>
+      </div>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         [REPLACE D] DESCRIPTION
+         A paragraph or two about the project.
+         Keep it concise — this sits above the gallery.
+         ════════════════════════════════════════════════════ -->
+    <div class="project-description">
+      <p>Write your project description here. A few sentences about what it is, what your role was, and what makes it interesting.</p>
+    </div>
+
+    <!-- ════════════════════════════════════════════════════
+         GALLERY
+         Each .gallery-masonry-item is one photo.
+         Add as many as you like — the 2-column masonry
+         layout is handled automatically by site-fixes.css.
+
+         To add a photo:
+           1. Drop the image into assets/images/
+           2. Duplicate the block below and update src + alt
+         ════════════════════════════════════════════════════ -->
+    <div class="project-gallery">
+      <div class="gallery-masonry-wrapper">
+
+        <!-- Photo 1 -->
+        <div class="gallery-masonry-item">
+          <img
+            src="../assets/images/REPLACE-WITH-IMAGE-1.jpg"
+            alt="Description of photo 1"
+          >
+        </div>
+
+        <!-- Photo 2 -->
+        <div class="gallery-masonry-item">
+          <img
+            src="../assets/images/REPLACE-WITH-IMAGE-2.jpg"
+            alt="Description of photo 2"
+          >
+        </div>
+
+        <!-- Photo 3 -->
+        <div class="gallery-masonry-item">
+          <img
+            src="../assets/images/REPLACE-WITH-IMAGE-3.jpg"
+            alt="Description of photo 3"
+          >
+        </div>
+
+        <!-- Photo 4 -->
+        <div class="gallery-masonry-item">
+          <img
+            src="../assets/images/REPLACE-WITH-IMAGE-4.jpg"
+            alt="Description of photo 4"
+          >
+        </div>
+
+        <!-- Add more photos by duplicating the block above ↑ -->
+
+      </div>
+    </div>
+
+  </main>
+
+  <script src="../assets/static/inject-icons.js"></script>
+</body>
+</html>

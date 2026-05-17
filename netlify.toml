@@ -1,0 +1,17 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/work-1/*"
+  to = "/"
+  status = 302
+
+[[redirects]]
+  from = "/cart"
+  to = "/"
+  status = 302
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"

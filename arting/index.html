@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arting &mdash; Michael &quot;Myko&quot; Huff</title>
+  <link rel="icon" type="image/x-icon" href="../assets/sqsp/universal/default-favicon.ico">
+  <link rel="stylesheet" type="text/css" href="../assets/static/static/versioned-site-css/64440e704d53e82542518574/18/5c5a519771c10ba3470d8101/64440e704d53e8254251857c/1735/site.css"/>
+  <link rel="stylesheet" type="text/css" href="../assets/static/static/vta/5c5a519771c10ba3470d8101/versioned-assets/1770322189254-3WKSOLNQAMKIJ2S2IB5F/static.css">
+  <link rel="stylesheet" type="text/css" href="../assets/static/site-fixes.css">
+  <style>
+    .arting-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+      padding: 1.5rem 3vw 3rem;
+    }
+    .arting-grid-item {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+      display: block;
+      text-decoration: none;
+    }
+    .arting-grid-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.4s ease;
+    }
+    .arting-grid-item:hover img {
+      transform: scale(1.04);
+    }
+    .arting-grid-overlay {
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+    }
+    .arting-grid-item:hover .arting-grid-overlay {
+      background: rgba(0,0,0,0.45);
+    }
+    .arting-grid-title {
+      color: #fff;
+      font-size: 1.1rem;
+      letter-spacing: 0.05em;
+      text-align: center;
+      padding: 0 1rem;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+    .arting-grid-item:hover .arting-grid-title {
+      opacity: 1;
+    }
+    @media (max-width: 600px) {
+      .arting-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+<script type="text/javascript" src="https://use.typekit.net/ik/0hF7wmKXjig1YwleYDu7bAU-m9OzvIuQg4B8x6YXjnbfenMIfFHN4UJLFRbh52jhWDjXF2b3ZQS3Febuwh9twR9XwR9U529aFg7PMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0deBhZAoqZWJlZc8cZPuDFeFqO1FUiABkZWF3jAF8OcFzdP37O1FUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80Zko0ZWbCjWw0dA9C-hNydeBGjAuCZWb0jhNlOeUyicm0ZemkOAZTZc9lSDsRZfoDSWmyScmDSeBRZPoRdhXCdeNRjAUGdaFXOYFUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0jhNlOYiaikoyjamTiY8Djhy8ZYmC-Ao1Oco8ifUaiaS0jWw0dA9CiaiaOclzjAUy-eBldemXOcFzdPUaiaS0deBhZAoqZWJlZc8cZPuDFeFqO1FUiABkZWF3jAF8OcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJFjAlX-WjlZa4ziemD-kJsj14ydcszdKu1ScNXZWFUiA97fbRbdsMMeMb6MKG4fFZlIMMjgPMfH6qJXcXbMg6YJMJ7fbRsdsMMeMt6MKG4fFFlIMMjIPMfH6qJ0BMbMs6YJMJ7fbKo9gMgegI6MTMg7L0hG6j.js" async fetchpriority="high" onload="try{Typekit.load();}catch(e){} document.documentElement.classList.remove('wf-loading');"></script>
+<script>document.documentElement.classList.add('wf-loading')</script>
+<style>@keyframes fonts-loading { 0%, 99% { color: transparent; } } html.wf-loading * { animation: fonts-loading 3s; }</style>
+</head>
+<body class="tweak-portfolio-grid-overlay-height-small tweak-portfolio-grid-overlay-image-aspect-ratio-43-four-three">
+
+  <div id="siteWrapper" class="clearfix site-wrapper">
+    <header id="header" class="header theme-col--primary">
+      <div class="header-display-desktop" data-content-field="site-title">
+
+        <div class="header-title-nav-wrapper">
+          <div class="header-title" data-animation-role="header-element">
+            <div class="header-title-text">
+              <a id="site-title" href="../index.html" data-animation-role="header-element">Michael &quot;Myko&quot; Huff </a>
+            </div>
+          </div>
+          <div class="header-nav">
+            <div class="header-nav-wrapper">
+              <nav class="header-nav-list">
+                <div class="header-nav-item header-nav-item--collection">
+                  <a href="../writing/index.html" data-animation-role="header-element">Writing</a>
+                </div>
+                <div class="header-nav-item header-nav-item--collection">
+                  <a href="../engineering/index.html" data-animation-role="header-element">Engineering</a>
+                </div>
+                <div class="header-nav-item header-nav-item--collection header-nav-item--active">
+                  <a href="../arting/index.html" data-animation-role="header-element">Arting</a>
+                </div>
+                <div class="header-nav-item header-nav-item--collection">
+                  <a href="../contact.html" data-animation-role="header-element">Contact</a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+
+        <div class="header-actions header-actions--right">
+          <div class="header-actions-action header-actions-action--social">
+            <a class="icon icon--fill header-icon header-icon-border-shape-none header-icon-border-style-solid" href="https://www.instagram.com/koalahamlet/" target="_blank" aria-label="Instagram">
+              <svg viewBox="23 23 64 64"><use xlink:href="#instagram-unauth-icon" width="110" height="110"></use></svg>
+            </a>
+            <a class="icon icon--fill header-icon header-icon-border-shape-none header-icon-border-style-solid" href="http://Github.com/koalahamlet" target="_blank" aria-label="GitHub">
+              <svg viewBox="23 23 64 64"><use xlink:href="#github-unauth-icon" width="110" height="110"></use></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <main>
+    <div class="arting-grid">
+
+      <a class="arting-grid-item" href="music-box-village.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/3af119db-4043-4ede-a5b1-698fbb6f602f/PXL_20240423_161147942.jpg" alt="The Music Box Village">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">The Music Box Village</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="secret-alley.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/5a3357da-d7f1-4f2c-8897-8732188bafa9/ALLEY_establishing.jpeg" alt="The Secret Alley">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">The Secret Alley</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="raining-chainsaws.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/c8c7e81c-4375-4da9-845a-0777991c2169/space_eclectic.jpg" alt="Raining Chainsaws">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">Raining Chainsaws</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="muni-toons.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/1682184145281-A0AB10DKYW0AFDBEVH8F/child_peek.jpeg" alt="Muni Toons">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">Muni Toons</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="apetite-obscure.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/1682376575127-P4MRCX8VIJ7XUNUMRMO5/AO+witch+meal.jpeg" alt="Apetite Obscure">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">Apetite Obscure</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="brine-e6d7d.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/1682318510329-XXSQ2VGT0RW3LLVT9BK5/rathskellar.jpg" alt="The Rathskellar Club">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">The Rathskellar Club</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="rogue-bench-repair.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/1682348023173-O16EYCIDOET1TOXISWW1/post_install.jpeg" alt="Rogue Bench Repair">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">Rogue Bench Repair</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="free-bazaar.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/1682183657043-ONFGTLEW9P9GWFYH1JI1/IMG_20190913_085245.jpg" alt="Free Bazaar">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">Free Bazaar</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="cairn-river-table.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/1682347843314-JKXWFGI2IZCO3QA0IPAE/PXL_20220708_224254485.jpg" alt="Cairn River Table">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">Cairn River Table</div></div>
+      </a>
+
+      <a class="arting-grid-item" href="valencia-parklet.html">
+        <img src="../assets/images/content/v1/64440e704d53e82542518574/1682466145144-MDWY509VMPSP5I2H4FOF/finish_out.jpeg" alt="Valencia &amp; 17th Parklet">
+        <div class="arting-grid-overlay"><div class="arting-grid-title">Valencia &amp; 17th Parklet</div></div>
+      </a>
+
+    </div>
+  </main>
+
+<script src="../assets/static/inject-icons.js"></script>
+</body>
+</html>
