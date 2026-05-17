@@ -9,13 +9,52 @@
   <link rel="stylesheet" type="text/css" href="../assets/static/site-fixes.css">
   <style>
     .placeholder-content {
-      max-width: 700px;
-      margin: 6rem auto;
-      padding: 0 2rem;
+      max-width: 680px;
+      margin: 5rem auto;
+      padding: 0 2rem 4rem;
       font-family: var(--base-font-family, sans-serif);
     }
-    .placeholder-content h1 { font-size: 2rem; margin-bottom: 1rem; }
-    .placeholder-content p { color: #666; }
+    .placeholder-content p {
+      color: #333;
+      line-height: 1.8;
+      margin-bottom: 1.5rem;
+      font-size: 1.05rem;
+    }
+    .placeholder-content a { color: inherit; }
+    .writing-portfolio {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 0 2rem 5rem;
+      font-family: var(--base-font-family, sans-serif);
+    }
+    .writing-portfolio-category {
+      font-size: 0.75rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #aaa;
+      margin: 2.5rem 0 0.6rem;
+    }
+    .writing-portfolio-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .writing-portfolio-list li {
+      border-top: 1px solid #eee;
+      padding: 0.65rem 0;
+    }
+    .writing-portfolio-list li:last-child {
+      border-bottom: 1px solid #eee;
+    }
+    .writing-portfolio-list a {
+      color: #222;
+      text-decoration: none;
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+    .writing-portfolio-list a:hover {
+      text-decoration: underline;
+    }
     #header, #header * { pointer-events: auto !important; }
   </style>
 <script type="text/javascript" src="https://use.typekit.net/ik/0hF7wmKXjig1YwleYDu7bAU-m9OzvIuQg4B8x6YXjnbfenMIfFHN4UJLFRbh52jhWDjXF2b3ZQS3Febuwh9twR9XwR9U529aFg7PMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0deBhZAoqZWJlZc8cZPuDFeFqO1FUiABkZWF3jAF8OcFzdP37O1FUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80Zko0ZWbCjWw0dA9C-hNydeBGjAuCZWb0jhNlOeUyicm0ZemkOAZTZc9lSDsRZfoDSWmyScmDSeBRZPoRdhXCdeNRjAUGdaFXOYFUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0jhNlOYiaikoyjamTiY8Djhy8ZYmC-Ao1Oco8ifUaiaS0jWw0dA9CiaiaOclzjAUy-eBldemXOcFzdPUaiaS0deBhZAoqZWJlZc8cZPuDFeFqO1FUiABkZWF3jAF8OcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJFjAlX-WjlZa4ziemD-kJsj14ydcszdKu1ScNXZWFUiA97fbRbdsMMeMb6MKG4fFZlIMMjgPMfH6qJXcXbMg6YJMJ7fbRsdsMMeMt6MKG4fFFlIMMjIPMfH6qJ0BMbMs6YJMJ7fbKo9gMgegI6MTMg7L0hG6j.js" async fetchpriority="high" onload="try{Typekit.load();}catch(e){} document.documentElement.classList.remove('wf-loading');"></script>
@@ -66,8 +105,34 @@
   </div>
   <main>
     <div class="placeholder-content">
-      <h1>Writing</h1>
-      <p>Coming soon.</p>
+      <p>I write technical content for software companies. The work I'm proudest of has a recurring shape: take something genuinely complicated, find the thread a smart non-specialist can follow, and tell it without flattening the parts that made it worth writing about. A customer story about an airline shipping a mobile app over Christmas shouldn't read like a press release, and a "what's a zero-day" piece shouldn't feel like a Wikipedia paraphrase. Both can be good in their own way if you take them seriously.</p>
+      <p>My background is in software. I still work as an independent engineer, so I can read a codebase, follow a postmortem, and usually tell when a draft is fudging a detail to make the prose flow. That matters most on the formats I get hired for: customer stories where the specifics are the whole point, engineering blog posts where a missed nuance is embarrassing, and comparison guides where readers are making real decisions based on what's on the page.</p>
+      <p>If you have a story sitting in a Slack channel that no one has time to write up, or a product whose technical depth keeps getting smoothed out in review, <a href="../contact.html">get in touch</a>.</p>
+    </div>
+
+    <div class="writing-portfolio">
+
+      <p class="writing-portfolio-category">Technical stories</p>
+      <ul class="writing-portfolio-list">
+        <li><a href="https://lovable.dev/blog/hunting-networking-bugs-in-kubernetes" target="_blank" rel="noopener">A Bug Hunt in Our Kubernetes Cluster</a></li>
+      </ul>
+
+      <p class="writing-portfolio-category">Case studies</p>
+      <ul class="writing-portfolio-list">
+        <li><a href="https://www.bitsandletters.com/work/stripe-city-billboards" target="_blank" rel="noopener">How Stripe City's Billboards Made Real-Time Data Feel Alive</a></li>
+      </ul>
+
+      <p class="writing-portfolio-category">Subject matter 101</p>
+      <ul class="writing-portfolio-list">
+        <li><a href="https://www.chainguard.dev/supply-chain-security-101/zero-day-vulnerabilities-what-they-are-and-how-to-protect-your-org" target="_blank" rel="noopener">Zero-day vulnerabilities: What they are and how to protect your org</a></li>
+        <li><a href="https://www.chainguard.dev/supply-chain-security-101/5-real-cve-examples-and-how-to-prevent-them" target="_blank" rel="noopener">5 real CVE examples, and how to prevent them</a></li>
+      </ul>
+
+      <p class="writing-portfolio-category">Comparison guides</p>
+      <ul class="writing-portfolio-list">
+        <li><a href="https://www.chainguard.dev/supply-chain-security-101/best-java-docker-image-comparison-guide-2026" target="_blank" rel="noopener">Best Java Docker image: Comparison Guide 2026</a></li>
+      </ul>
+
     </div>
   </main>
 <script src="../assets/static/inject-icons.js"></script>
