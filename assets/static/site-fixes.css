@@ -40,6 +40,6 @@ body > .header-actions--right { display: none !important; }
 /* Desktop header layout and spacing */
 .header-display-desktop { padding: 0.75rem 2rem; }
 .header-display-desktop .header-title-nav-wrapper { display: flex; align-items: center; gap: 2.5em; }
-.header-display-desktop .header-title-text a { font-size: 1.1rem; white-space: nowrap; }
+.header-display-desktop .header-title-text a { font-size: 2rem; white-space: nowrap; }
 .header-display-desktop .header-nav-list { gap: 2em !important; }
 .header-display-desktop .header-nav-item a { padding: 0.25em 0; }
