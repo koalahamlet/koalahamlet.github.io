@@ -1,4 +1,29 @@
 /* === Koalahamlet site fixes (shared) === */
+:root {
+  --font-body: "aktiv-grotesk", "Helvetica Neue", Arial, sans-serif;
+  --font-display: "brandon-grotesque", "Helvetica Neue", Arial, sans-serif;
+  --font-editorial: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  --type-body: 1.0625rem;
+  --type-small: 0.875rem;
+  --type-meta: 0.9375rem;
+  --type-project-title: 2.5rem;
+}
+html { font-size: 16px; }
+body {
+  font-family: var(--font-body) !important;
+  font-size: var(--type-body) !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0 !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display) !important;
+  letter-spacing: 0 !important;
+}
+p {
+  font-family: var(--font-body) !important;
+  line-height: 1.7 !important;
+  letter-spacing: 0 !important;
+}
 .header-menu { display: none !important; }
 main .sections:first-child .page-section:first-child { padding-top: 20px !important; }
 #header { position: relative !important; z-index: 100; pointer-events: auto !important; }
@@ -44,6 +69,73 @@ body > .header-actions--right { display: none !important; }
 /* Desktop header layout and spacing */
 .header-display-desktop { padding: 0.75rem 2rem; }
 .header-display-desktop .header-title-nav-wrapper { display: flex; align-items: center; gap: 2.5em; }
-.header-display-desktop .header-title-text a { font-size: 2.6rem; white-space: nowrap; }
+.header-display-desktop .header-title-text a {
+  font-family: var(--font-display);
+  font-size: 2rem !important;
+  line-height: 1.1;
+  letter-spacing: 0;
+  white-space: nowrap;
+}
 .header-display-desktop .header-nav-list { gap: 2em !important; }
-.header-display-desktop .header-nav-item a { padding: 0.25em 0; }
+.header-display-desktop .header-nav-item a {
+  font-family: var(--font-body) !important;
+  font-size: 1rem !important;
+  line-height: 1.4 !important;
+  letter-spacing: 0 !important;
+  padding: 0.25em 0;
+}
+
+/* Shared project-page typography */
+.eng-project-content h1,
+.project-hero-title h1 {
+  font-family: var(--font-display);
+  letter-spacing: 0;
+  font-weight: 600 !important;
+  line-height: 1.1 !important;
+}
+.eng-project-content h1 {
+  font-size: var(--type-project-title) !important;
+  line-height: 1.1;
+}
+.eng-project-meta {
+  font-family: var(--font-body);
+  font-size: var(--type-meta) !important;
+  line-height: 1.5;
+}
+.eng-project-body,
+.project-intro {
+  font-family: var(--font-body);
+  font-size: var(--type-body);
+  line-height: 1.7 !important;
+}
+.eng-back {
+  font-family: var(--font-body);
+  font-size: var(--type-small) !important;
+  line-height: 1.4;
+}
+.item-pagination-prev-next {
+  font-family: var(--font-body);
+  font-size: var(--type-small);
+  letter-spacing: 0.04em;
+}
+.item-pagination-title {
+  font-family: var(--font-display);
+  letter-spacing: 0;
+}
+
+/* Keep the contact heading and links on a readable measure. */
+#collection-contact main .content-wrapper {
+  box-sizing: border-box;
+  width: min(100%, 600px);
+}
+#collection-contact main h1 {
+  width: 100% !important;
+  text-align: center;
+}
+
+@media (max-width: 799px) {
+  :root {
+    --type-body: 1rem;
+    --type-project-title: 2.15rem;
+  }
+}

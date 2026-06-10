@@ -46,18 +46,27 @@
     }
     .eng-grid-title {
       color: #fff;
-      font-size: 1.1rem;
-      letter-spacing: 0.05em;
+      max-width: 90%;
+      font-family: var(--font-display);
+      font-size: 2.35rem;
+      font-weight: 700;
+      line-height: 1.05;
+      letter-spacing: 0;
       text-align: center;
-      padding: 0 1rem;
+      text-wrap: balance;
+      text-shadow: 0 2px 18px rgba(0,0,0,0.55);
+      padding: 0 1.5rem;
       opacity: 0;
-      transition: opacity 0.3s ease;
+      transform: translateY(8px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
     }
     .eng-grid-item:hover .eng-grid-title {
       opacity: 1;
+      transform: translateY(0);
     }
     @media (max-width: 600px) {
       .eng-grid { grid-template-columns: 1fr; }
+      .eng-grid-title { font-size: 2rem; }
     }
   </style>
 <script type="text/javascript" src="https://use.typekit.net/ik/0hF7wmKXjig1YwleYDu7bAU-m9OzvIuQg4B8x6YXjnbfenMIfFHN4UJLFRbh52jhWDjXF2b3ZQS3Febuwh9twR9XwR9U529aFg7PMkG0jAFu-WsoShFGZAsude80ZkoRdhXCHKoyjamTiY8Djhy8ZYmC-Ao1Oco8if37OcBDOcu8OfG0deBhZAoqZWJlZc8cZPuDFeFqO1FUiABkZWF3jAF8OcFzdP37O1FUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80ZkoRdhXCjAFu-WsoShFGZAsude80Zko0ZWbCjWw0dA9C-hNydeBGjAuCZWb0jhNlOeUyicm0ZemkOAZTZc9lSDsRZfoDSWmyScmDSeBRZPoRdhXCdeNRjAUGdaFXOYFUiABkZWF3jAF8ShFGZAsude80ZkoRdhXCiaiaOcBRiA8XpWFR-emqiAUTdcS0jhNlOYiaikoyjamTiY8Djhy8ZYmC-Ao1Oco8ifUaiaS0jWw0dA9CiaiaOclzjAUy-eBldemXOcFzdPUaiaS0deBhZAoqZWJlZc8cZPuDFeFqO1FUiABkZWF3jAF8OcFzdPUaiaS0SaBujW48SagyjhmDjhy8ZYmC-Ao1OcFzdPJFjAlX-WjlZa4ziemD-kJsj14ydcszdKu1ScNXZWFUiA97fbRbdsMMeMb6MKG4fFZlIMMjgPMfH6qJXcXbMg6YJMJ7fbRsdsMMeMt6MKG4fFFlIMMjIPMfH6qJ0BMbMs6YJMJ7fbKo9gMgegI6MTMg7L0hG6j.js" async fetchpriority="high" onload="try{Typekit.load();}catch(e){} document.documentElement.classList.remove('wf-loading');"></script>
