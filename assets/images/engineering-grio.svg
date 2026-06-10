@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#eee9df"/>
+  <g fill="none" stroke="#2c3539" stroke-width="16" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="120" y="130" width="380" height="360" rx="18"/>
+    <rect x="700" y="130" width="380" height="360" rx="18"/>
+    <path d="M500 290h250"/>
+    <path d="m650 230 100 60-100 60"/>
+  </g>
+  <g fill="none" stroke="#58676d" stroke-width="10" stroke-linecap="round">
+    <path d="m210 315 95-90 100 80-70 95-125-85"/>
+    <path d="M305 225v175M210 315h195"/>
+  </g>
+  <circle cx="210" cy="315" r="44" fill="#e76f51"/>
+  <rect x="260" y="180" width="90" height="90" rx="12" fill="#e9c46a" transform="rotate(-10 305 225)"/>
+  <path d="m405 250 58 100H347z" fill="#2a9d8f"/>
+  <path d="m335 350 50 50-50 50-50-50z" fill="#457b9d"/>
+  <g fill="none" stroke="#2c3539" stroke-width="16" stroke-linecap="round">
+    <path d="M790 220h200M790 300h200M790 380h145"/>
+  </g>
+  <circle cx="1020" cy="380" r="20" fill="#e76f51"/>
+  <text x="105" y="730" fill="#2c3539" font-family="Arial" font-size="92" font-weight="700">Grio</text>
+  <text x="110" y="800" fill="#58676d" font-family="Arial" font-size="29">CONSULTING · DELIVERY · CROSS-PLATFORM ENGINEERING</text>
+</svg>

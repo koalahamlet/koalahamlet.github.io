@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#111820"/>
+  <path d="M0 520h1200v380H0z" fill="#202a32"/>
+  <path d="m40 700 1120-320" stroke="#ff5a1f" stroke-width="22" stroke-dasharray="55 45"/>
+  <g transform="translate(390 235)" fill="none" stroke="#ffffff" stroke-width="20">
+    <path d="m40 220 70-145h380l100 145v150H40zM145 220l55-90h225l70 90z"/>
+    <circle cx="160" cy="370" r="65"/>
+    <circle cx="485" cy="370" r="65"/>
+  </g>
+  <g fill="none" stroke="#ff5a1f" stroke-width="12" stroke-linecap="round">
+    <path d="M655 300c-95-72-198-72-293-6" stroke-dasharray="18 20"/>
+    <path d="M745 270c165-98 312-72 405 22" stroke-dasharray="18 20"/>
+    <path d="M700 325c-16-128-2-222 44-282" stroke-dasharray="18 20"/>
+  </g>
+  <g transform="translate(672 277)">
+    <ellipse cx="28" cy="14" rx="48" ry="16" fill="#ff5a1f"/>
+    <path d="M-20 14v30c0 9 21 16 48 16s48-7 48-16V14" fill="#ff5a1f"/>
+    <ellipse cx="28" cy="44" rx="48" ry="16" fill="#ff8a5c"/>
+    <circle cx="28" cy="44" r="8" fill="#ffffff"/>
+  </g>
+  <circle cx="550" cy="605" r="13" fill="#ff5a1f"/>
+  <circle cx="875" cy="605" r="13" fill="#ff5a1f"/>
+  <text x="105" y="745" fill="#ffffff" font-family="Arial" font-size="92" font-weight="700">Cruise</text>
+  <text x="110" y="815" fill="#ff5a1f" font-family="Arial" font-size="29">IN-CAR EXPERIENCE · TRUST · AUTONOMY</text>
+</svg>

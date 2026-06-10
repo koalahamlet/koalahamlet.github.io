@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+  <rect width="1200" height="900" fill="#f4efe6"/>
+  <rect x="105" y="100" width="990" height="460" rx="28" fill="#6b4f3b"/>
+  <g fill="#f4efe6">
+    <rect x="185" y="180" width="240" height="300" rx="10"/>
+    <rect x="480" y="180" width="240" height="300" rx="10"/>
+    <rect x="775" y="180" width="240" height="300" rx="10"/>
+  </g>
+  <g fill="#d5a94e">
+    <circle cx="305" cy="260" r="48"/>
+    <circle cx="600" cy="260" r="48"/>
+    <circle cx="895" cy="260" r="48"/>
+  </g>
+  <g fill="none" stroke="#6b4f3b" stroke-width="12" stroke-linecap="round">
+    <path d="M230 350h150M230 390h125M230 430h145"/>
+    <path d="M525 350h150M525 390h125M525 430h145"/>
+    <path d="M820 350h150M820 390h125M820 430h145"/>
+  </g>
+  <text x="105" y="710" fill="#493526" font-family="Arial" font-size="84" font-weight="700">Goodreads</text>
+  <text x="110" y="785" fill="#6b4f3b" font-family="Arial" font-size="29">READING COMMUNITY · KINDLE · ANDROID</text>
+</svg>
