@@ -108,6 +108,18 @@ body > .header-actions--right { display: none !important; }
   font-size: var(--type-body);
   line-height: 1.7 !important;
 }
+.project-intro {
+  text-align: center;
+}
+#block-5e51c9c569b94f28debc h2 {
+  text-align: center;
+}
+.muni-toons-video {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border: 0;
+  display: block;
+}
 .eng-back {
   font-family: var(--font-body);
   font-size: var(--type-small) !important;
